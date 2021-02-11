@@ -1,6 +1,18 @@
+caption {
+  caption-side: bottom;
+  text-align: right;
+}
 h1 {
   font-style: italic;
   color: #373fff;
+}
+
+.color:nth-child(odd){
+  background-color: #ff33cc;
+}
+
+.color:nth-child(even) {
+  background-color: #e495e4; 
 }
 
 table {
@@ -11,23 +23,25 @@ table {
   text-align: center;
 }
 
-@font-face {
-  font-family: headerFont;
-  src: url(assets\fonts\RockSalt-Regular.ttf);
+tfoot {
+  background-image: url(./assets/leopardskin.jpg);
+  border-style: solid;
+  border-width: 3px;
+  border-color: #800080;
+  color: white;
+  font-family: Rock Salt;
 }
 
-tfoot{
+thead {  
+  background-image: url(./assets/leopardskin.jpg);
+  font-family: Rock Salt;
   border-style: solid;
   border-width: 3px;
   border-color: #800080;
-}
-thead {
-  border-style: solid;
-  border-width: 3px;
-  border-color: #800080;
+  color: white;
 }
 
 tbody {
-  background-image: url(assets\leopardskin.jpg);
   font-family: Helvetica;
+  background-image: url("noise.jpg");
 }
